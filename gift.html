@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rodelyu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOADING SCREEN WITH PIXEL CAKE -->
+  <div id="loader">
+    <canvas id="cake" width="48" height="48" aria-label="Loading Cake"></canvas>
+    <div id="load-txt">Nagloload...</div>
+    <div class="bar-wrap"><div id="bar"></div></div>
+  </div>
+
+  <canvas id="bg"></canvas>
+  <div class="wrap">
+    <div class="top">
+      <a class="pxbtn" href="index.html">&larr; Back</a>
+      <div class="mwrap">
+        <button id="mus" type="button">♪ Choose the music</button>
+        <div id="mp">
+          <div class="mh">♪ Choose the music</div>
+          <div id="tl"></div>
+          <button class="mi" id="addm" type="button">+ Add music</button>
+          <div class="ctl">
+            <button id="pp" type="button" aria-label="Play o pause">▶</button>
+            <button id="nx" type="button" aria-label="Susunod">▶▶</button>
+            <input id="vol" type="range" min="0" max="100" value="60" aria-label="Lakas">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="intro">
+      <h1>This is my Gift for you Pader</h1>
+      <canvas id="box" width="48" height="48" aria-label="Regalo"></canvas>
+      <div id="tap">i-tap ang regalo para buksan</div>
+    </div>
+
+    <div id="gal">
+      <div class="banner">Para sayu Pader</div>
+      <p class="sub">i-tap ang larawan para mabasa ang liham</p>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+
+  <div id="m" role="dialog" aria-modal="true" aria-label="Liham para kay Tatay">
+    <div class="modal">
+      <div class="big" id="big"></div>
+      <div class="letter">
+        <div class="seal">✉</div>
+        <div class="lang">
+          <button type="button" class="lg on" id="ltl">TAGALOG</button>
+          <button type="button" class="lg" id="len">ENGLISH</button>
+        </div>
+        <p class="to" id="to">Mahal kong Tatay,</p>
+        <p class="tx" id="msg"></p>
+        <p class="from" id="from">Nagmamahal,<br>ang iyong anak</p>
+      </div>
+      <div class="nav">
+        <button type="button" id="prev" aria-label="Nakaraan">&lt;</button>
+        <span id="cnt"></span>
+        <button type="button" class="x" id="close">ISARA</button>
+        <button type="button" id="next" aria-label="Susunod">&gt;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

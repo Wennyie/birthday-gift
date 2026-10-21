@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pixel Birthday Cake</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-cake">🎂</div>
+      <div class="loader-text">NAGHAHANDA NA...</div>
+      <div class="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="c"></canvas>
+  <div id="hint">click the cake for a surprise!</div>
+  <button id="mus" type="button">MUSIC OFF</button>
+  <div id="pop" role="dialog" aria-modal="true" aria-labelledby="pt">
+    <div class="box">
+      <div class="trophy">🏆</div>
+      <h2 id="pt">AMA NG TAON!</h2>
+      <p>Maligayang Kaarawan, Tatay!</p>
+      <p>Salamat sa lahat ng sakripisyo, pagmamahal, at gabay mo. Ikaw ang haligi ng aming tahanan, ang aming bayani, at ang pinakamahusay na ama sa buong mundo.</p>
+      <p>Mahal na mahal ka namin! 🎂</p>
+      <a class="gift" href="gift.html" aria-label="Buksan ang regalo">
+        <svg width="96" height="96" viewBox="0 0 48 48" shape-rendering="crispEdges">
+          <rect x="7" y="26" width="34" height="18" fill="#ff5d8f"/>
+          <rect x="33" y="26" width="8" height="18" fill="#c93a69"/>
+          <rect x="21" y="26" width="6" height="18" fill="#ffd24a"/>
+          <rect x="4" y="17" width="40" height="10" fill="#ff7aa6"/>
+          <rect x="36" y="17" width="8" height="10" fill="#c93a69"/>
+          <rect x="4" y="17" width="40" height="2" fill="#ffc2d8"/>
+          <rect x="21" y="17" width="6" height="10" fill="#ffd24a"/>
+          <path fill="#ffd24a" fill-rule="evenodd" d="M12 8h10v9H12zM26 8h10v9H26zM15 11h4v4h-4zM29 11h4v4h-4z"/>
+          <rect x="21" y="11" width="6" height="6" fill="#d4a017"/>
+        </svg>
+      </a>
+      <div class="cap">i-tap ang regalo para buksan!</div>
+      <button type="button">SALAMAT PO!</button>
+    </div>
+  </div>
+  <script src="index.js" defer></script>
+</body>
+</html>
